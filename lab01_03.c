@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define NUM_ROWS 8
+#include <stdlib.h>
 
 int main() {
     double conversionRate;
@@ -13,5 +14,5 @@ int main() {
         printf("%5d CHF\t<-->\t%0.5f BTC\n", chf, btc);
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }

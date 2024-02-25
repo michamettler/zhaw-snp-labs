@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 int main() {
     int charCount = 0;
@@ -29,5 +30,5 @@ int main() {
     printf("Anzahl Zeichen: %d\n", charCount);
     printf("Anzahl Woerter: %d\n", wordCount);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
