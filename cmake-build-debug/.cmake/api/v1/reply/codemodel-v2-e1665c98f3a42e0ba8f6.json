@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "zhaw_snp_labs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "lab01_02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab01_02-Debug-79d11e8a2eb2bbfe8749.json",
+					"name" : "lab01_02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab01_03::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab01_03-Debug-6a27c69df87b28218803.json",
+					"name" : "lab01_03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab01_04::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab01_04-Debug-2a7a1fc5291a05de3c89.json",
+					"name" : "lab01_04",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug",
+		"source" : "C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
