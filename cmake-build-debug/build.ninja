@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-d
 
 build cmake_object_order_depends_target_lab01_02: phony || CMakeFiles/lab01_02.dir
 
-build CMakeFiles/lab01_02.dir/lab01_02.c.obj: C_COMPILER__lab01_02_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/lab01_02.c || cmake_object_order_depends_target_lab01_02
-  DEP_FILE = CMakeFiles\lab01_02.dir\lab01_02.c.obj.d
+build CMakeFiles/lab01_02.dir/Lab01_01.c.obj: C_COMPILER__lab01_02_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/Lab01_01.c || cmake_object_order_depends_target_lab01_02
+  DEP_FILE = CMakeFiles\lab01_02.dir\Lab01_01.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\lab01_02.dir
   OBJECT_FILE_DIR = CMakeFiles\lab01_02.dir
@@ -63,7 +63,7 @@ build CMakeFiles/lab01_02.dir/lab01_02.c.obj: C_COMPILER__lab01_02_unscanned_Deb
 #############################################
 # Link the executable lab01_02.exe
 
-build lab01_02.exe: C_EXECUTABLE_LINKER__lab01_02_Debug CMakeFiles/lab01_02.dir/lab01_02.c.obj
+build lab01_02.exe: C_EXECUTABLE_LINKER__lab01_02_Debug CMakeFiles/lab01_02.dir/Lab01_01.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab01_02.dir
@@ -82,8 +82,8 @@ build lab01_02.exe: C_EXECUTABLE_LINKER__lab01_02_Debug CMakeFiles/lab01_02.dir/
 
 build cmake_object_order_depends_target_lab01_03: phony || CMakeFiles/lab01_03.dir
 
-build CMakeFiles/lab01_03.dir/lab01_03.c.obj: C_COMPILER__lab01_03_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/lab01_03.c || cmake_object_order_depends_target_lab01_03
-  DEP_FILE = CMakeFiles\lab01_03.dir\lab01_03.c.obj.d
+build CMakeFiles/lab01_03.dir/Lab01_02.c.obj: C_COMPILER__lab01_03_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/Lab01_02.c || cmake_object_order_depends_target_lab01_03
+  DEP_FILE = CMakeFiles\lab01_03.dir\Lab01_02.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\lab01_03.dir
   OBJECT_FILE_DIR = CMakeFiles\lab01_03.dir
@@ -96,7 +96,7 @@ build CMakeFiles/lab01_03.dir/lab01_03.c.obj: C_COMPILER__lab01_03_unscanned_Deb
 #############################################
 # Link the executable lab01_03.exe
 
-build lab01_03.exe: C_EXECUTABLE_LINKER__lab01_03_Debug CMakeFiles/lab01_03.dir/lab01_03.c.obj
+build lab01_03.exe: C_EXECUTABLE_LINKER__lab01_03_Debug CMakeFiles/lab01_03.dir/Lab01_02.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab01_03.dir
@@ -115,8 +115,8 @@ build lab01_03.exe: C_EXECUTABLE_LINKER__lab01_03_Debug CMakeFiles/lab01_03.dir/
 
 build cmake_object_order_depends_target_lab01_04: phony || CMakeFiles/lab01_04.dir
 
-build CMakeFiles/lab01_04.dir/lab01_04.c.obj: C_COMPILER__lab01_04_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/lab01_04.c || cmake_object_order_depends_target_lab01_04
-  DEP_FILE = CMakeFiles\lab01_04.dir\lab01_04.c.obj.d
+build CMakeFiles/lab01_04.dir/Lab01_03.c.obj: C_COMPILER__lab01_04_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/Lab01_03.c || cmake_object_order_depends_target_lab01_04
+  DEP_FILE = CMakeFiles\lab01_04.dir\Lab01_03.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\lab01_04.dir
   OBJECT_FILE_DIR = CMakeFiles\lab01_04.dir
@@ -129,7 +129,7 @@ build CMakeFiles/lab01_04.dir/lab01_04.c.obj: C_COMPILER__lab01_04_unscanned_Deb
 #############################################
 # Link the executable lab01_04.exe
 
-build lab01_04.exe: C_EXECUTABLE_LINKER__lab01_04_Debug CMakeFiles/lab01_04.dir/lab01_04.c.obj
+build lab01_04.exe: C_EXECUTABLE_LINKER__lab01_04_Debug CMakeFiles/lab01_04.dir/Lab01_03.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab01_04.dir
@@ -138,6 +138,39 @@ build lab01_04.exe: C_EXECUTABLE_LINKER__lab01_04_Debug CMakeFiles/lab01_04.dir/
   TARGET_FILE = lab01_04.exe
   TARGET_IMPLIB = liblab01_04.dll.a
   TARGET_PDB = lab01_04.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab02_01
+
+
+#############################################
+# Order-only phony target for lab02_01
+
+build cmake_object_order_depends_target_lab02_01: phony || CMakeFiles/lab02_01.dir
+
+build CMakeFiles/lab02_01.dir/Lab02_01.c.obj: C_COMPILER__lab02_01_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/Lab02_01.c || cmake_object_order_depends_target_lab02_01
+  DEP_FILE = CMakeFiles\lab02_01.dir\Lab02_01.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab02_01.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab02_01.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab02_01
+
+
+#############################################
+# Link the executable lab02_01.exe
+
+build lab02_01.exe: C_EXECUTABLE_LINKER__lab02_01_Debug CMakeFiles/lab02_01.dir/Lab02_01.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab02_01.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab02_01.exe
+  TARGET_IMPLIB = liblab02_01.dll.a
+  TARGET_PDB = lab02_01.exe.dbg
 
 
 #############################################
@@ -171,6 +204,8 @@ build lab01_03: phony lab01_03.exe
 
 build lab01_04: phony lab01_04.exe
 
+build lab02_01: phony lab02_01.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build lab01_04: phony lab01_04.exe
 #############################################
 # Folder: C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug
 
-build all: phony lab01_02.exe lab01_03.exe lab01_04.exe
+build all: phony lab01_02.exe lab01_03.exe lab01_04.exe lab02_01.exe
 
 # =============================================================================
 # Built-in targets

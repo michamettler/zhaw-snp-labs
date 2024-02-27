@@ -1,5 +1,6 @@
 C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug/CMakeFiles/lab01_02.dir
 C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug/CMakeFiles/lab01_03.dir
 C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug/CMakeFiles/lab01_04.dir
+C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug/CMakeFiles/lab02_01.dir
 C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
