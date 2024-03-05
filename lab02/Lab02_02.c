@@ -69,10 +69,10 @@ weekday_t calculate_weekday(const date_t date) {
 }
 
 void print_weekday(const weekday_t day) {
-    const char *weekdays[] = {"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
+    const char *weekdays[] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 
     if (day <= SAT) {
-        printf(weekdays[day]);
+        printf("%s\n", weekdays[day]);
     } else {
         assert(!" day is out-of-range");
     }
@@ -80,16 +80,14 @@ void print_weekday(const weekday_t day) {
 
 int main(int argc, char *argv[]) {
     date_t date;
-    printf("Enter date (yyyy-mm-dd): \n");
-
-    if (scanf("%d-%d-%d", &date.year, &date.month, &date.day) != 3) {
+    if (argc < 2 || sscanf(argv[1], "%d-%d-%d", &date.year, &date.month, &date.day) != 3) {
         fprintf(stderr, "Invalid format.\n"
                 "The selected date (yyyy-mm-dd) has to be Gregorian (after 15. October 1582 (inclusive)).");
         return EXIT_FAILURE;
     }
 
     if (is_valid_date(date)) {
-        printf("%d-%d-%d is a ", date.year, date.month, date.day);
+        printf("%d-%02d-%02d is a ", date.year, date.month, date.day);
         print_weekday(calculate_weekday(date));
         return EXIT_SUCCESS;
     } else {
