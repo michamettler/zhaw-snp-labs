@@ -304,6 +304,72 @@ build lab03_04.exe: C_EXECUTABLE_LINKER__lab03_04_Debug CMakeFiles/lab03_04.dir/
   TARGET_IMPLIB = liblab03_04.dll.a
   TARGET_PDB = lab03_04.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target lab03_05
+
+
+#############################################
+# Order-only phony target for lab03_05
+
+build cmake_object_order_depends_target_lab03_05: phony || CMakeFiles/lab03_05.dir
+
+build CMakeFiles/lab03_05.dir/lab03/Lab03_05.c.obj: C_COMPILER__lab03_05_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/lab03/Lab03_05.c || cmake_object_order_depends_target_lab03_05
+  DEP_FILE = CMakeFiles\lab03_05.dir\lab03\Lab03_05.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab03_05.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab03_05.dir\lab03
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab03_05
+
+
+#############################################
+# Link the executable lab03_05.exe
+
+build lab03_05.exe: C_EXECUTABLE_LINKER__lab03_05_Debug CMakeFiles/lab03_05.dir/lab03/Lab03_05.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab03_05.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab03_05.exe
+  TARGET_IMPLIB = liblab03_05.dll.a
+  TARGET_PDB = lab03_05.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab03_06
+
+
+#############################################
+# Order-only phony target for lab03_06
+
+build cmake_object_order_depends_target_lab03_06: phony || CMakeFiles/lab03_06.dir
+
+build CMakeFiles/lab03_06.dir/lab03/Lab03_06.c.obj: C_COMPILER__lab03_06_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/lab03/Lab03_06.c || cmake_object_order_depends_target_lab03_06
+  DEP_FILE = CMakeFiles\lab03_06.dir\lab03\Lab03_06.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab03_06.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab03_06.dir\lab03
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab03_06
+
+
+#############################################
+# Link the executable lab03_06.exe
+
+build lab03_06.exe: C_EXECUTABLE_LINKER__lab03_06_Debug CMakeFiles/lab03_06.dir/lab03/Lab03_06.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab03_06.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab03_06.exe
+  TARGET_IMPLIB = liblab03_06.dll.a
+  TARGET_PDB = lab03_06.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -346,6 +412,10 @@ build lab03_02: phony lab03_02.exe
 
 build lab03_04: phony lab03_04.exe
 
+build lab03_05: phony lab03_05.exe
+
+build lab03_06: phony lab03_06.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -354,7 +424,7 @@ build lab03_04: phony lab03_04.exe
 #############################################
 # Folder: C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug
 
-build all: phony lab01_01.exe lab01_02.exe lab01_03.exe lab02_01.exe lab02_02.exe lab03_01.exe lab03_02.exe lab03_04.exe
+build all: phony lab01_01.exe lab01_02.exe lab01_03.exe lab02_01.exe lab02_02.exe lab03_01.exe lab03_02.exe lab03_04.exe lab03_05.exe lab03_06.exe
 
 # =============================================================================
 # Built-in targets
