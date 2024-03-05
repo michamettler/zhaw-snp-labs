@@ -4,8 +4,8 @@
 #define OPERAND_BUFFER_SIZE 10
 
 typedef struct {
-    char operand1;
-    char operand2;
+    unsigned int operand1;
+    unsigned int operand2;
     char operation;
 } Expression;
 
@@ -29,20 +29,12 @@ void print_binary(unsigned int value) {
     for (int i = 31; i >= 0; i--) {
         putchar((value & (1 << i)) ? '1' : '0');
         if (i % 8 == 0 && i != 0) {
-            putchar('\''); // Trennzeichen für die Lesbarkeit
+            putchar('\'');
         }
     }
 }
 
 void print_bit_operation_bin(Expression expression, unsigned int result) {
-    /*
-    Students: Print the entire operation in bin including the result
-    Bin:
-    00000000'00000000'00000000'00001100
-    00000000'00000000'00000000'00001111 ^
-    -----------------------------------
-    00000000'00000000'00000000'00000011
-    */
     printf("Bin:\n");
     print_binary(expression.operand1);
     printf("\n");
@@ -54,27 +46,14 @@ void print_bit_operation_bin(Expression expression, unsigned int result) {
 }
 
 void print_bit_operation_hex(Expression expression, unsigned int result) {
-    /*
-    Students: Print the entire operation in hex including the result
-
-    Hex:
-    0x0c ^ 0x0f = 0x03
-    */
     printf("Hex: 0x%x %c 0x%x = 0x%x\n", expression.operand1, expression.operation, expression.operand2, result);
 }
 
 void print_bit_operation_dec(Expression expression, unsigned int result) {
-    /*
-    Students: Print the entire operation in hex including the result
-
-    Dec:
-    12 ^ 15 = 3
-    */
     printf("Dec: %d %c %d = %d\n", expression.operand1, expression.operation, expression.operand2, result);
 }
 
 unsigned int bit_operation(Expression expression) {
-    // Students: Do the actual bit operation and return the result
     switch (expression.operation) {
         case '&': return expression.operand1 & expression.operand2;
         case '|': return expression.operand1 | expression.operand2;
@@ -98,7 +77,6 @@ int main() {
         operand1 = parse_operand(operand1_str);
         operand2 = parse_operand(operand2_str);
 
-        // Students: Create an expression
         Expression expression = {operand1, operand2, operation};
 
         unsigned int result = bit_operation(expression);
