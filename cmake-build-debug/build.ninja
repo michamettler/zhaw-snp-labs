@@ -238,6 +238,39 @@ build lab03_01.exe: C_EXECUTABLE_LINKER__lab03_01_Debug CMakeFiles/lab03_01.dir/
   TARGET_IMPLIB = liblab03_01.dll.a
   TARGET_PDB = lab03_01.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target lab03_02
+
+
+#############################################
+# Order-only phony target for lab03_02
+
+build cmake_object_order_depends_target_lab03_02: phony || CMakeFiles/lab03_02.dir
+
+build CMakeFiles/lab03_02.dir/lab03/Lab03_02.c.obj: C_COMPILER__lab03_02_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/lab03/Lab03_02.c || cmake_object_order_depends_target_lab03_02
+  DEP_FILE = CMakeFiles\lab03_02.dir\lab03\Lab03_02.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab03_02.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab03_02.dir\lab03
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab03_02
+
+
+#############################################
+# Link the executable lab03_02.exe
+
+build lab03_02.exe: C_EXECUTABLE_LINKER__lab03_02_Debug CMakeFiles/lab03_02.dir/lab03/Lab03_02.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab03_02.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab03_02.exe
+  TARGET_IMPLIB = liblab03_02.dll.a
+  TARGET_PDB = lab03_02.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -276,6 +309,8 @@ build lab02_02: phony lab02_02.exe
 
 build lab03_01: phony lab03_01.exe
 
+build lab03_02: phony lab03_02.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -284,7 +319,7 @@ build lab03_01: phony lab03_01.exe
 #############################################
 # Folder: C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug
 
-build all: phony lab01_01.exe lab01_02.exe lab01_03.exe lab02_01.exe lab02_02.exe lab03_01.exe
+build all: phony lab01_01.exe lab01_02.exe lab01_03.exe lab02_01.exe lab02_02.exe lab03_01.exe lab03_02.exe
 
 # =============================================================================
 # Built-in targets

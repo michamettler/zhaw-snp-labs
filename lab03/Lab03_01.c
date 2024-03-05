@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 int main() {
-    //unsigned int number = 0x75;
     unsigned int number = 0x75;
     unsigned int bit = 3; // bit at position 3
 
