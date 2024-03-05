@@ -55,6 +55,12 @@ build CMakeFiles/lab01_01.dir/Lab01_01.c.obj: C_COMPILER__lab01_01_unscanned_Deb
   OBJECT_DIR = CMakeFiles\lab01_01.dir
   OBJECT_FILE_DIR = CMakeFiles\lab01_01.dir
 
+build CMakeFiles/lab01_01.dir/Lab03_01.c.obj: C_COMPILER__lab01_01_unscanned_Debug C$:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/Lab03_01.c || cmake_object_order_depends_target_lab01_01
+  DEP_FILE = CMakeFiles\lab01_01.dir\Lab03_01.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab01_01.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab01_01.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab01_01
@@ -63,7 +69,7 @@ build CMakeFiles/lab01_01.dir/Lab01_01.c.obj: C_COMPILER__lab01_01_unscanned_Deb
 #############################################
 # Link the executable lab01_01.exe
 
-build lab01_01.exe: C_EXECUTABLE_LINKER__lab01_01_Debug CMakeFiles/lab01_01.dir/Lab01_01.c.obj
+build lab01_01.exe: C_EXECUTABLE_LINKER__lab01_01_Debug CMakeFiles/lab01_01.dir/Lab01_01.c.obj CMakeFiles/lab01_01.dir/Lab03_01.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab01_01.dir
