@@ -1,42 +1,81 @@
-/**
- *  P02 Praktikum
- *
- *  Das Programm liest einen Monat (1-12) und ein Jahr (1600-2400) ein und
- *  gibt die Anzahl der Tage dieses Monats aus.
- *
- *  @author Gerrit Burkert, Adaptation bazz
- *  @version 15-FEB-2013, 16-OCT-2017, 17-OCT-2019, 16-FEB-2022
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ERROR_IN_MONTH 1
-#define ERROR_IN_YEAR 2
+enum month_t { JAN = 1, FEB, MAR, APR, MAI, JUN, JUL, AUG, SEP, OKT, NOV, DEZ };
 
-///// Student Code
+int gibIntWert(const char* mode, int const min, const int max)
+{
+    while (1)
+    {
+        printf("Enter %s (%d - %d):\n", mode, min, max);
+        char inputBuffer[10];
+        if (fgets(inputBuffer, 5, stdin) != NULL)
+        {
+            const int input = atoi(inputBuffer);
+            if (input >= min && input <= max)
+            {
+                return input;
+            }
+            printf("Invalid range (%d - %d). Try again.\n", min, max);
+        }
+    }
+}
 
+int istSchaltjahr(int jahr)
+{
+    return jahr % 4 == 0 && (jahr % 100 != 0 || jahr % 400 == 0);
+}
 
+int tageProMonat(int jahr, int monat)
+{
+    switch (monat)
+    {
+    case JAN:
+        return 31;
+    case FEB:
+        return istSchaltjahr(jahr) ? 29 : 28;
+    case MAR:
+        return 31;
+    case APR:
+        return 30;
+    case MAI:
+        return 31;
+    case JUN:
+        return 30;
+    case JUL:
+        return 31;
+    case AUG:
+        return 31;
+    case SEP:
+        return 30;
+    case OKT:
+        return 31;
+    case NOV:
+        return 30;
+    case DEZ:
+        return 31;
+    default:
+        (void)printf("Der Monat %d konnte nicht gefunden werden.", monat);
+        return 0;
+    }
+}
 
-///// END Student Code
-
-
-int main (int argc, char *argv[]) {
-    
+int main(int argc, char* argv[])
+{
     int monat, jahr;
-     
+
     //  Monat einlesen und Bereich ueberpruefen
     monat = gibIntWert("Monat", 1, 12);
-    jahr  = gibIntWert("Jahr", 1600, 9999);
-	
+    jahr = gibIntWert("Jahr", 1600, 9999);
+
     //  Ausgabe zum Test
-    printf("Monat: %d, Jahr: %d \n", monat, jahr);    
-    
+    (void)printf("Monat: %d, Jahr: %d \n", monat, jahr);
+
     //  Ausgabe zum Test (hier mit dem ternaeren Operator "?:")
-    printf("%d ist %s Schaltjahr\n", jahr, istSchaltjahr(jahr) ? "ein" : "kein");
+    (void)printf("%d ist %s Schaltjahr\n", jahr, istSchaltjahr(jahr) ? "ein" : "kein");
 
     // Ausgabe
-    printf("Der Monat %02d-%d hat %d Tage.\n", monat, jahr, tageProMonat(jahr, monat));
-   
+    (void)printf("Der Monat %02d-%d hat %d Tage.\n", monat, jahr, tageProMonat(jahr, monat));
+
     return 0;
 }
