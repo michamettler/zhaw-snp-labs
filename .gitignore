@@ -1,0 +1,7 @@
+*.d
+*.o
+*build/
+.idea/
+*tests/
+*testlib/
+*bin/

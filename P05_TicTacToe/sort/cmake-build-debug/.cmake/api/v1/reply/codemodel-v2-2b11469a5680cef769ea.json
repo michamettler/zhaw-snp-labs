@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "snp_labs",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "snp_labs_dedicated::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-snp_labs_dedicated-Debug-50588a76f496a5844b9d.json",
+					"name" : "snp_labs_dedicated",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Workarea/Projects/zhaw/snp/zhaw-labs-snp/P05_TicTacToe/lab05/cmake-build-debug",
+		"source" : "C:/Workarea/Projects/zhaw/snp/zhaw-labs-snp/P05_TicTacToe/lab05"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,3 @@
+C:/Workarea/Projects/zhaw/snp/zhaw-labs-snp/P05_TicTacToe/lab05/cmake-build-debug/CMakeFiles/snp_labs_dedicated.dir
+C:/Workarea/Projects/zhaw/snp/zhaw-labs-snp/P05_TicTacToe/lab05/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Workarea/Projects/zhaw/snp/zhaw-labs-snp/P05_TicTacToe/lab05/cmake-build-debug/CMakeFiles/rebuild_cache.dir
