@@ -110,8 +110,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Workarea/Projects/zhaw/snp/zhaw-labs-snp/P05_TicTacToe/lab05/cmake-build-debug",
-		"source" : "C:/Workarea/Projects/zhaw/snp/zhaw-labs-snp/P05_TicTacToe/lab05"
+		"build" : "C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs/cmake-build-debug",
+		"source" : "C:/Workarea/Projects/zhaw/snp/zhaw-snp-labs"
 	},
 	"version" : 
 	{

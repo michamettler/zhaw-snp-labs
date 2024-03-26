@@ -1,5 +1,6 @@
 *.d
 *.o
+/.vscode/
 *build/
 .idea/
 *tests/
