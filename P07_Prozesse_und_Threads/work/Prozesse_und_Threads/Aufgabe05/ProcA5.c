@@ -32,7 +32,7 @@ int main(void) {
       case 0:
         printf("\n... ich bin das Kind %d\n", getpid());
         for (i = 0; i < 10; i++) {
-            usleep(500000);                         // slow down a bit
+            usleep(5000000);                         // slow down a bit
             printf("Mein Elternprozess ist %d\n", id = getppid());
         }
         printf("... so das wars\n");

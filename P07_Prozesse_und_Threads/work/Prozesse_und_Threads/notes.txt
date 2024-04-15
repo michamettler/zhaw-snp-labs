@@ -1,0 +1,70 @@
+# Task One
+1)
+- Fork erstellt mehrere Child-Prozesse, die den Stand vom Programm (in unserem Fall i) kopieren
+- Mit Switch-Case wird evaluiert, in welcher Art von Prozess man gerade ist (Parent, Child, Fehler)
+2)
+- Unklar, welche Reihenfolge, scheint immer Eletern zuerst auszugeben
+- was bedeuten die 2106? Ist das eine Random Prozess-Id?
+
+--------------------------------------------------------------------------------------------------------------------------------------
+# Task Two
+2) Fehlermeldung execl not successful: No such file or directory => .c statt .e?
+3) Dasselbe
+4) execl not successful: Exec format error
+=> execl wird eigentlich verwendet, um Programm innerhalb eines existierenden Prozesses aufzurufen
+Somit würde innerhalb des Child Prozesses ein neues Programm aufgerufen werden. Geht aufgrund der Fehlermeldungen aber nicht.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+# Task Three
+Ausgabe:
+1)
+$PID: 6340       PPID: 5949
+PID: 6346        PPID: 6340
+PID: 6345        PPID: 6342
+PID: 6342        PPID: 6340
+PID: 6348        PPID: 6342
+PID: 6343        PPID: 6340
+PID: 6353        PPID: 6347
+PID: 6347        PPID: 6344
+PID: 6344        PPID: 6341
+PID: 6354        PPID: 6341
+PID: 6341        PPID: 6340
+PID: 6352        PPID: 6343
+PID: 6350        PPID: 6345
+PID: 6351        PPID: 6344
+PID: 6349        PPID: 6341
+PID: 6355        PPID: 6349
+2) bash(5949)───pstree(7188)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+# Task Four
+/usr/bin/ld: /tmp/ccYcZlOW.o: in function `main':
+ProcA4.c:(.text+0x1a): undefined reference to `selectCPU'
+/usr/bin/ld: ProcA4.c:(.text+0x4f): undefined reference to `justWork'
+/usr/bin/ld: ProcA4.c:(.text+0x96): undefined reference to `justWork'
+collect2: error: ld returned 1 exit status
+
+=> ich nehme mal an, dass die Reihenfolge unterschiedlich ist
+
+--------------------------------------------------------------------------------------------------------------------------------------
+# Task Five
+
+1)Läuft wie erwartet 10 mal durch, wenn Parent stirbt wird ein neuer rangezogen
+... ich bin das Kind 17144
+Mein Elternprozess ist 17143
+Mein Elternprozess ist 17143
+Mein Elternprozess ist 17143
+Mein Elternprozess ist 1
+vscode ➜ ~/snp/P07_Prozesse_und_Threads/work/Prozesse_und_Threads/Aufgabe05 (main) $ Mein Elternprozess ist 1
+Mein Elternprozess ist 1
+Mein Elternprozess ist 1
+Mein Elternprozess ist 1
+Mein Elternprozess ist 1
+Mein Elternprozess ist 1
+... so das wars
+
+2) Parent wechselt bereits nach erstem Loop
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Task Six
+
