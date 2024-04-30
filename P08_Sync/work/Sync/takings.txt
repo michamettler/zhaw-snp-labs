@@ -1,0 +1,3 @@
+#Aufgabe 1
+
+a) errors wenn sich unterschiedliche Transaktionen gegenseitig blockieren

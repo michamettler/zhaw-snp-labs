@@ -27,7 +27,7 @@ void *customer(void* data) {
     cData *cD = (cData *) data;
 
     rand_seed(&randnum, 0); 
-
+    pthread_mutex_lock(&(cD->lock));
     // put coin and select coffee
     for (i = 0; i < ITERATIONS; i++) {
         ranNum = rand_float(&randnum);
@@ -38,6 +38,7 @@ void *customer(void* data) {
             cD->selCount2 += 1;
     }
     
+    pthread_mutex_unlock(&(cD->lock));
     pthread_exit(0);  
 }
 

@@ -20,12 +20,12 @@
 //******************************************************************************
 
 void *coffeeTeller(void* data) {
-
     int i;
     cData *cD = (cData *) data;
 
     // now start selling coffee
     printf("\nCoffee teller machine starting\n\n");
+    pthread_mutex_lock(&(cD->lock));
     
     i = 0;
     while (i < ITERATIONS) {
@@ -40,6 +40,7 @@ void *coffeeTeller(void* data) {
         if (i%1000000 == 0) printf("working %d\n", i);
         i++;
     }
+    pthread_mutex_unlock(&(cD->lock));
     pthread_exit(0);
 }
 
